@@ -4,7 +4,7 @@ from database import db
 from models import Post, User
 from utils import allowed_file, save_image
 
-bp = Blueprint("posts", __name__, url_prefix="/posts")
+bp = Blueprint("posts", __name__)
 
 @bp.route("/uploads/<f>")
 def upl(f): 
@@ -44,7 +44,7 @@ def all():
             "status": p.status,
             "date": p.date.isoformat(),
             "phone": p.phone_number,
-            "image": f"http://localhost:5000/posts/uploads/{p.image_filename}" if p.image_filename else None,
+            "image": f"/api/posts/uploads/{p.image_filename}" if p.image_filename else None,
             "reporter": p.reporter.username
         })
         
