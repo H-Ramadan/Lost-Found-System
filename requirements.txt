@@ -1,24 +1,5 @@
-# الأساسيات
 flask
-flask-cors
-python-dotenv
-
-# قواعد البيانات (عشان مشكلة database اللي ظهرت)
 flask-sqlalchemy
-Flask-Migrate
-flask_jwt_extended
-
-# معالجة الصور (عشان مشكلة PIL اللي ظهرت)
-Pillow
-
-# التشفير والـ Authentication (لو فيه Login)
-PyJWT
-flask-bcrypt
-
-# الاختبارات والـ Pipeline
+flask-cors
+flask-jwt-extended
 pytest
-flake8
-
-# مكتبات إضافية شائعة
-requests
-werkzeug
