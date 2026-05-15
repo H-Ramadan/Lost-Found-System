@@ -6,6 +6,7 @@ python-dotenv
 # قواعد البيانات (عشان مشكلة database اللي ظهرت)
 flask-sqlalchemy
 Flask-Migrate
+flask_jwt_extended
 
 # معالجة الصور (عشان مشكلة PIL اللي ظهرت)
 Pillow
