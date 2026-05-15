@@ -1,6 +1,23 @@
-pytest
-python-dotenv
+# الأساسيات
 flask
 flask-cors
-flask_jwt_extended
+python-dotenv
+
+# قواعد البيانات (عشان مشكلة database اللي ظهرت)
 flask-sqlalchemy
+Flask-Migrate
+
+# معالجة الصور (عشان مشكلة PIL اللي ظهرت)
+Pillow
+
+# التشفير والـ Authentication (لو فيه Login)
+PyJWT
+flask-bcrypt
+
+# الاختبارات والـ Pipeline
+pytest
+flake8
+
+# مكتبات إضافية شائعة
+requests
+werkzeug
