@@ -1,7 +1,10 @@
+import sys
+import os
+sys.path.append(os.getcwd())
+
 import pytest
 from app import create_app
 from database import db
-
 @pytest.fixture
 def client():
     app = create_app()
