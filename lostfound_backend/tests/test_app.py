@@ -11,4 +11,7 @@ def client():
     with app.app_context():
         db.create_all() # بننشئ الجداول هنا
         yield app.test_client() # هنا التست بيبدأ يشتغل
-        db.drop_all() # بننظف بعد ما نخلص
+        db.drop_all() 
+        def test_server_is_running(client):
+    response = client.get('/')
+    assert response.status_code in [200, 404]
