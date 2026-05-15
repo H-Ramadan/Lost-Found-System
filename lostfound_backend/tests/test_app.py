@@ -1,6 +1,6 @@
 import pytest
-from lostfound_backend.app import create_app
-from lostfound_backend.database import db
+from app import create_app
+from database import db
 
 @pytest.fixture
 def client():
