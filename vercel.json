@@ -1,5 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/lostfound_frontend/$1" }
+  "builds": [
+    {
+      "src": "lostfound_frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "lostfound_frontend/$1"
+    }
   ]
 }
