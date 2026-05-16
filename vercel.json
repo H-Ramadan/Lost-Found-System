@@ -1,15 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "lostfound_backend/app.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "lostfound_frontend/**",
-      "use": "@vercel/static"
-    }
-  ],
   "rewrites": [
     {
       "source": "/api/(.*)",
@@ -17,7 +6,7 @@
     },
     {
       "source": "/(.*)",
-      "destination": "lostfound_frontend/$1"
+      "destination": "lostfound_frontend/dist/$1"
     }
   ]
 }
