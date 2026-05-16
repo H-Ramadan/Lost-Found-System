@@ -1,5 +1,12 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "lostfound_backend/app.py" }
+    {
+      "source": "/api/(.*)",
+      "destination": "lostfound_backend/app.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "lostfound_frontend/$1"
+    }
   ]
 }
